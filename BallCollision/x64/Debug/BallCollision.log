@@ -1,0 +1,20 @@
+﻿  Ball.cpp
+  Output.cpp
+  RTree.cpp
+C:\Users\kupri\Desktop\interview-main\BallCollision\RTree.cpp(173,18): warning C4244: return: преобразование "__int64" в "unsigned int", возможна потеря данных
+C:\Users\kupri\Desktop\interview-main\BallCollision\RTree.cpp(182,17): warning C4244: return: преобразование "__int64" в "unsigned int", возможна потеря данных
+C:\Users\kupri\Desktop\interview-main\BallCollision\RTree.cpp(238,53): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\kupri\Desktop\interview-main\BallCollision\RTree.cpp(241,53): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\kupri\Desktop\interview-main\BallCollision\RTree.cpp(248,27): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\kupri\Desktop\interview-main\BallCollision\RTree.cpp(251,45): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\kupri\Desktop\interview-main\BallCollision\RTree.cpp(260,198): warning C4267: аргумент: преобразование из "size_t" в "unsigned int"; возможна потеря данных
+  main.cpp
+C:\Users\kupri\Desktop\interview-main\BallCollision\main.cpp(35,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\kupri\Desktop\interview-main\BallCollision\main.cpp(42,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\kupri\Desktop\interview-main\BallCollision\main.cpp(44,19): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+C:\Users\kupri\Desktop\interview-main\BallCollision\main.cpp(45,19): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+C:\Users\kupri\Desktop\interview-main\BallCollision\main.cpp(46,19): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+C:\Users\kupri\Desktop\interview-main\BallCollision\main.cpp(47,31): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\kupri\Desktop\interview-main\BallCollision\main.cpp(51,19): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+  Создание кода...
+  BallCollision.vcxproj -> C:\Users\kupri\Desktop\interview-main\x64\Debug\BallCollision.exe
