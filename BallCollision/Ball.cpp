@@ -2,7 +2,7 @@
 
 // constructor
 Ball::Ball(float pos_x, float pos_y, float dir_x, float dir_y, float radius) : m_current_position(pos_x, pos_y), m_direction(dir_x, dir_y),
-																			   m_radius(radius)
+m_radius(radius)
 {
 }
 
@@ -82,29 +82,58 @@ void Ball::setDirection(float direction_x, float direction_y)
 // collise with the vertical wall
 void Ball::collideVerticalWall(int screen_width)
 {
-	if (getX() - getRadius() <= 0 || getX() + getRadius() >= screen_width)
+	if (m_current_position.x - m_radius <= 0)
 	{
-		m_direction.x = -m_direction.x;
-		moveToPrevPosition();
+		if (m_direction.x < 0)
+		{
+			m_direction.x = -m_direction.x;
+			// moveToPrevPosition();
 
-		// cout << "Collision between ball and vertical wall " << endl;
+			// cout << "Collision between ball and horizontal wall " << endl;
+		}
+	}
+
+	if (m_current_position.x + m_radius >= screen_width)
+	{
+		if (m_direction.x > 0)
+		{
+			m_direction.x = -m_direction.x;
+			// moveToPrevPosition();
+
+			// cout << "Collision between ball and horizontal wall " << endl;
+		}
 	}
 }
 
 // collise with the horizontal wall
 void Ball::collideHorizontalWall(int screen_height)
 {
-	if (getY() - getRadius() <= 0 || getY() + getRadius() >= screen_height)
-	{
-		m_direction.y = -m_direction.y;
-		moveToPrevPosition();
 
-		// cout << "Collision between ball and horizontal wall " << endl;
+	if (m_current_position.y - m_radius <= 0)
+	{
+		if (m_direction.y < 0)
+		{
+			m_direction.y = -m_direction.y;
+			// moveToPrevPosition();
+
+			// cout << "Collision between ball and horizontal wall " << endl;
+		}
+	}
+
+	if (m_current_position.y + m_radius >= screen_height)
+	{
+		if (m_direction.y > 0)
+		{
+			m_direction.y = -m_direction.y;
+			// moveToPrevPosition();
+
+			// cout << "Collision between ball and horizontal wall " << endl;
+		}
 	}
 }
 
 // collision between balls
-void Ball::ballsCollision(Ball &ball_1, Ball &ball_2)
+void Ball::ballsCollision(Ball& ball_1, Ball& ball_2)
 {
 	float ball_1_x = ball_1.getX();
 	float ball_1_y = ball_1.getY();

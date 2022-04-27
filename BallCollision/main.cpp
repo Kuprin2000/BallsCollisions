@@ -16,7 +16,7 @@ constexpr int MIN_BALLS = 100;
 constexpr bool SHOW_FPS = false;			// if we need to show fps
 constexpr bool SET_FRAMERATE_LIMIT = false; // if we want to limit fps
 
-// NOTE: there is a rule: R_TREE_MIN_COUNT >= R_TREE_MAX_COUNT/2
+// NOTE: there is a rule: 2 <= R_TREE_MIN_COUNT <= R_TREE_MAX_COUNT/2
 // NOTE 2: these parameters affect of performance. Now everything is configured fox maximum speed
 constexpr unsigned R_TREE_MIN_COUNT = 10; // min number of children in r-tree node
 constexpr unsigned R_TREE_MAX_COUNT = 20; // max number of children in r-tree node

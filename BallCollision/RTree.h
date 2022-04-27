@@ -1,6 +1,7 @@
 #pragma once
 #include <algorithm>
 #include <cstdlib>
+#include <list>
 #include "BndBox.h"
 #include "RTreeNode.h"
 
@@ -13,7 +14,7 @@ private:
 	unsigned m_min_count;		 // min number of children of the r-tree node
 	RTreeNode *m_root;			 // root of the node
 	unsigned m_node_id_counter;	 // id counter to create id for the new node
-	vector<RTreeNode *> m_nodes; // nodes container
+	list<RTreeNode *> m_nodes;	 // nodes container
 
 public:
 	// here we need min count and max count
